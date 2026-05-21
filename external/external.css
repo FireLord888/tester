@@ -1,0 +1,206 @@
+*{
+	font-family: Chewy, sans-serif;
+	margin: 0px;
+}
+
+body{
+	background: url(media/background.png) cover;
+	height: 5000px;
+	color: #0356a2;
+}
+
+#logo{
+	height:200px;
+	position: absolute;
+	top: 10px;
+	left: 0px;
+}
+
+header{
+	height: 200px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	background-image: linear-gradient(180deg, lightskyblue, white);
+}
+
+#title{
+	font-size: 60px;
+	color: #0356a2;
+}
+
+.mainlinks{
+	height: 50px;
+	width: 200px;
+	cursor: pointer;
+	font-size: 30px;
+	margin: 5px;
+	color: #0356a2;
+	text-decoration: none;
+	padding: 5px;
+	padding-top: 15px;
+	border: solid 2px #0356a2;
+	border-radius: 10px;
+	transition: transform 0.1s ease;
+	display: block;
+}
+
+.mainlinks:hover{
+	color: white;
+	background-color: #0356a2;
+	transition: 1s;
+}
+
+.mainbutton{
+	transition: transform 0.2s ease;
+	border: none;
+	background-color: #00000000;
+}
+
+.mainbutton:active{
+	transform: scale(0.9);
+}
+
+#loginhover{
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	transform: scale(0.5) translateY(-170px);
+	transition: 0.75s ease;
+}
+
+#loginhover:hover{
+	transform: scale(0.5) translateY(-170px);
+}
+
+#loginlinks{
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#loginhover:hover #loginlinks{
+	opacity: 1;
+	visibility: visible;
+}
+
+#hover{
+	display: inline-block;
+	position: relative;
+}
+
+#dropdown{
+	border-radius: 10px;
+	background-color: white;
+	position: absolute;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#hover:hover #dropdown{
+	visibility: visible;
+	opacity: 1;
+	z-index: 999;
+}
+
+.form:hover{
+	border: solid 2px #0245a2;
+	border-radius: 5px;
+}
+}
+
+#dropdowndisappear{
+	display: block;
+}
+
+#hover:hover #dropdowndisappear{
+	display: none;
+}
+
+#dropdownsign{
+	display: none;
+	height: 100%;
+	width: 100%;
+}
+
+#dropdownsign:hover{
+	color: white;
+}
+
+#hover:hover #dropdownsign{
+	display: block;
+}
+
+#hover:hover #accountgone{
+	display: none;
+}
+
+#account{
+	height: 50px;
+	position: fixed;
+	top: 100px;
+	right: 50px;
+	z-index: 999;
+}
+
+#account2{
+	width: 100px;
+	margin-right: 50px;
+	padding: 5px;
+}
+
+.accountlinks{
+	height: 60px;
+	width: 200px;
+	cursor: pointer;
+	font-size: 40px;
+	margin: 0px;
+	color: #0356a2;
+	text-decoration: none;
+	padding: auto;
+	padding-top: 10px;
+	border: solid 3px #0356a2;
+	border-radius: 10px;
+	transition: transform 0.1s ease;
+	display: block;
+	justify-content: center;
+}
+
+.accountlinks:hover{
+	color: white;
+	background-color: #0356a2;
+	transition: 1s;
+}
+
+.accountbutton{
+	transition: transform 0.2s ease;
+	border: none;
+	background-color: #00000000;
+}
+
+.accountbutton:active{
+	transform: scale(0.9);
+}
+
+#homeheading{
+	color: #eeeeee;
+	font-size: 100px;
+	letter-spacing: 3px;
+}
+
+#heading{
+	color: #0356a2;
+	font-size: 75px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	padding-top: 30px;
+}
